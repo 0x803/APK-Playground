@@ -8,7 +8,7 @@
 /* Set body font and background color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #00BFFF; /* Cyan */
+    background-color: #b8dbd9; /* Light Cyan */
     transition: background-color 0.5s;
     overflow: hidden;
 }
@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #333; /* Dark Gray */
+    background-color: #000000; /* Black */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,7 +29,7 @@ body {
 
 .loader {
     border: 8px solid #fff;
-    border-top: 8px solid #00BFFF; /* Cyan */
+    border-top: 8px solid #586f7c; /* Light Blue-Gray */
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -57,7 +57,7 @@ body {
 }
 
 .popup-content {
-    background-color: white;
+    background-color: #f4f4f9; /* Light Gray */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -81,7 +81,7 @@ body {
 
 .popup button {
     padding: 10px 20px;
-    background-color: #00BFFF; /* Cyan */
+    background-color: #000000; /* Black */
     color: white;
     border: none;
     border-radius: 5px;
@@ -90,7 +90,7 @@ body {
 }
 
 .popup button:hover {
-    background-color: #007ACC; /* Slightly darker Cyan */
+    background-color: #2f4550; /* Dark Blue-Gray */
 }
 
 /* Theme switcher styles */
@@ -110,12 +110,12 @@ body {
 .drag-drop h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #333; /* Dark Gray */
+    color: #000000; /* Black */
     margin-bottom: 20px;
 }
 
 .file-drop-zone {
-    border: 2px dashed #007ACC; /* Cyan */
+    border: 2px dashed #2f4550; /* Dark Blue-Gray */
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -129,7 +129,7 @@ body {
 .file-input-label {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007ACC; /* Cyan */
+    background-color: #000000; /* Black */
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -145,7 +145,7 @@ body {
 
 /* Header Styles */
 .header {
-    background-color: #007ACC; /* Cyan */
+    background-color: #2f4550; /* Dark Blue-Gray */
     color: white;
     padding: 20px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -187,7 +187,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: #00BFFF; /* Slightly lighter Cyan */
+    color: #b8dbd9; /* Light Cyan */
 }
 
 /* Main Content Styles */
@@ -205,7 +205,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #333; /* Dark Gray */
+    color: #000000; /* Black */
 }
 
 .features ul, .get-started ol, .contribute ul {
@@ -220,7 +220,7 @@ body {
 
 /* Footer Styles */
 .footer {
-    background-color: #007ACC; /* Cyan */
+    background-color: #2f4550; /* Dark Blue-Gray */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -238,5 +238,5 @@ body {
 }
 
 .footer-content a:hover {
-    color: #00BFFF; /* Slightly lighter Cyan */
+    color: #b8dbd9; /* Light Cyan */
 }
