@@ -8,9 +8,9 @@
 /* Set body font and background color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #b8dbd9; /* Light Cyan */
+    background-color: #f4f4f9; /* Light Gray */
     transition: background-color 0.5s;
-    overflow: hidden;
+    overflow-y: scroll; /* Add vertical scrollbar */
 }
 
 /* Loading Screen */
@@ -57,7 +57,7 @@ body {
 }
 
 .popup-content {
-    background-color: #f4f4f9; /* Light Gray */
+    background-color: #ffffff; /* White */
     border-radius: 10px;
     padding: 20px;
     text-align: center;
