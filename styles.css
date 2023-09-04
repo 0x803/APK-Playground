@@ -20,73 +20,43 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/* Rest of your CSS styles, including the drag-and-drop section and theme switcher */
+/* ... */
+
+/* Re-styling the theme switcher */
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
 }
 
-.navbar .logo img {
-    height: 40px;
-    margin-right: 10px;
+/* Styling the drag-and-drop box */
+.drag-drop {
+    text-align: center;
+    padding: 40px 0;
 }
 
-.navbar .logo h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #00bfff; /* Deep Sky Blue */
-}
-
-/* Hero section styles */
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.hero-content {
-    flex: 1;
-}
-
-.hero-content h2 {
-    font-size: 36px;
+.drag-drop h2 {
+    font-size: 28px;
     font-weight: bold;
     color: #333; /* Dark Gray */
     margin-bottom: 20px;
 }
 
-.hero-content p {
-    font-size: 18px;
-    color: #555; /* Gray */
-    margin-bottom: 30px;
+.file-drop-zone {
+    border: 2px dashed #007acc; /* Cyan */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.cta-button {
+.file-drop-zone p {
+    margin: 10px 0;
+}
+
+.file-input-label {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007acc; /* Cyan */
@@ -94,144 +64,14 @@ body {
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-    background-color: #00bfff; /* Deep Sky Blue */
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Features section styles */
-.features {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.feature {
-    flex: 1;
-    text-align: center;
-    margin: 0 10px;
-    padding: 20px;
-}
-
-.feature img {
-    height: 60px;
-    margin-bottom: 20px;
-}
-
-.feature h3 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Dark Gray */
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 16px;
-    color: #555; /* Gray */
-}
-
-/* Get Started and Contribute sections styles (similar to Features) */
-.get-started,
-.contribute {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
-}
-
-.get-started h2,
-.contribute h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333; /* Dark Gray */
-    margin-bottom: 20px;
-}
-
-.get-started p,
-.contribute p {
-    font-size: 18px;
-    color: #555; /* Gray */
-    margin-bottom: 30px;
-}
-
-/* Footer section styles */
-.footer {
-    background-color: #333; /* Dark Gray */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.footer a {
-    color: #00bfff; /* Deep Sky Blue */
-    text-decoration: none;
-}
-
-/* Dark mode styles */
-.dark-theme {
-    background-color: #333; /* Dark Gray */
-    color: white;
-}
-
-/* Theme switcher styles */
-.theme-switcher {
-    display: flex;
-    align-items: center;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin-left: 20px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
 }
 
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: 0.4s;
+.upload-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
-input:checked + .slider {
-    background-color: #007acc; /* Cyan */
-}
+/* ... Additional CSS for other sections ... */
 
-input:focus + .slider {
-    box-shadow: 0 0 1px #007acc; /* Cyan */
-}
-
-input:checked + .slider:before {
-    transform: translateX(26px);
-}
