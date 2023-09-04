@@ -36,7 +36,7 @@ Please make sure to follow our [code of conduct](CODE_OF_CONDUCT.md) and [contri
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this codebase for educational and non-commercial purposes.
+This project is licensed under the [MIT License](LICENSE.txt). You are free to use, modify, and distribute this codebase for educational and non-commercial purposes.
 
 ## Contact
 
