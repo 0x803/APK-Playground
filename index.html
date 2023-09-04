@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APK Playground</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Head content -->
 </head>
 <body class="light-theme">
     <div class="theme-switcher">
@@ -13,6 +10,30 @@
             <span class="slider round"></span>
         </label>
     </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <h2>Welcome to APK Playground</h2>
+            <p>Explore Android apps in your browser. To get started:</p>
+            <ul>
+                <li>Drag and drop your APK file onto the screen.</li>
+                <li>Click the "Get Started" button to begin testing.</li>
+            </ul>
+            <button id="close-popup">Got It</button>
+        </div>
+    </div>
+
+    <!-- Drag and Drop Box Section -->
+    <section class="drag-drop">
+        <h2>Drag &amp; Drop Your APK File Here</h2>
+        <div class="file-drop-zone">
+            <p>or</p>
+            <label for="file-input" class="file-input-label">
+                <span class="upload-icon">&#8613;</span> Click to Upload
+            </label>
+            <input type="file" id="file-input">
+        </div>
+    </section>
 
     <!-- Header Section -->
     <header class="header">
@@ -29,58 +50,51 @@
         </nav>
     </header>
 
-    <!-- Drag and Drop Box Section -->
-    <section class="drag-drop">
-        <h2>Drag &amp; Drop Your APK File Here</h2>
-        <div class="file-drop-zone">
-            <p>or</p>
-            <label for="file-input" class="file-input-label">
-                <span class="upload-icon">&#8613;</span> Click to Upload
-            </label>
-            <input type="file" id="file-input">
-        </div>
-    </section>
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Test Android APKs directly in your web browser.</li>
+                <li>Secure and sandboxed environment for safe testing.</li>
+                <li>Explore app functionality without installing on your device.</li>
+                <li>Easy-to-use drag-and-drop APK upload.</li>
+                <li>Switch between light and dark themes for comfortable testing.</li>
+            </ul>
+        </section>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Explore Android Apps in Your Browser</h2>
-            <p>Welcome to APK Playground, the platform for testing and experiencing Android APKs directly in your web browser.</p>
-            <a href="#get-started" class="cta-button">Get Started</a>
-        </div>
-        <div class="hero-image">
-            <img src="assets/apk-playground-screenshot.png" alt="APK Playground Screenshot">
-        </div>
-    </section>
+        <section id="get-started" class="get-started">
+            <h2>Get Started</h2>
+            <ol>
+                <li>Drag your APK file and drop it onto the screen.</li>
+                <li>Click the "Get Started" button to begin testing.</li>
+                <li>Interact with the app as if it were installed on your device.</li>
+                <li>Explore features and functionality with ease.</li>
+                <li>Switch between themes for the best testing experience.</li>
+            </ol>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <!-- Feature Cards Go Here -->
-    </section>
-
-    <!-- Get Started Section -->
-    <section id="get-started" class="get-started">
-        <!-- Getting Started Content Goes Here -->
-    </section>
-
-    <!-- Contribute Section -->
-    <section id="contribute" class="contribute">
-        <!-- Contribute Content Goes Here -->
-    </section>
+        <section id="contribute" class="contribute">
+            <h2>Contribute</h2>
+            <p>We welcome contributions to APK Playground. You can help in the following ways:</p>
+            <ul>
+                <li>Report issues or suggest improvements on our <a href="https://github.com/0x803/APK-Playground">GitHub repository</a>.</li>
+                <li>Contribute code enhancements or new features.</li>
+                <li>Help us improve the user experience and documentation.</li>
+                <li>Spread the word about APK Playground to the developer community.</li>
+            </ul>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <!-- Footer Content Goes Here -->
+        <div class="footer-content">
+            <p>&copy; 2023 APK Playground. All rights reserved.</p>
+            <p>GitHub: <a href="https://github.com/0x803">@0x803</a></p>
+        </div>
     </footer>
 
-    <!-- JavaScript for Theme Switcher -->
-    <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const body = document.body;
-
-        themeToggle.addEventListener('change', () => {
-            body.classList.toggle('dark-theme');
-        });
-    </script>
+    <!-- JavaScript for Pop-up and Animation -->
+    <script src="script.js"></script>
 </body>
 </html>
