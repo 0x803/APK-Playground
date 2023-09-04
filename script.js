@@ -1,11 +1,28 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Function to close the popup
+    function closePopup() {
+        popupOverlay.style.display = 'none';
+    }
+
+    // Get references to the popup elements
+    const popupOverlay = document.getElementById('popup-overlay');
+    const closePopupButton = document.getElementById('close-popup');
+
+    // Add a click event listener to the "Got It" button
+    closePopupButton.addEventListener('click', function () {
+        closePopup();
+    });
+
+    // Initially hide the popup (optional)
+    closePopup();
+
     // Add an event listener to the form for submission
     document.getElementById('upload-form').addEventListener('submit', function (e) {
         e.preventDefault();
 
         // Reference to the file input element
         const apkFileInput = document.getElementById('apkFile');
-        
+
         // Check if a file was selected
         if (!apkFileInput.files[0]) {
             alert('Please select an APK file to upload.');
@@ -26,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // Handle the server response here (e.g., show success message)
             alert(data.message); // Display a success message
             // You can also perform further actions based on the response
+
+            // Close the popup after successful upload (optional)
+            closePopup();
         })
         .catch(error => {
             // Handle any errors (e.g., network issues)
