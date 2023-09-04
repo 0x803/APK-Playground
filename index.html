@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APK Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/apk-playground-logo.png" alt="APK Playground Logo">
+                <h1>APK Playground</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#get-started">Get Started</a></li>
+                <li><a href="#contribute">Contribute</a></li>
+            </ul>
+            <div class="theme-switcher">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Explore Android Apps in Your Browser</h2>
+            <p>Welcome to APK Playground, the platform for testing and experiencing Android APKs directly in your web browser.</p>
+            <a href="#get-started" class="cta-button">Get Started</a>
+        </div>
+        <div class="hero-image">
+            <img src="assets/apk-playground-screenshot.png" alt="APK Playground Screenshot">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="assets/feature-upload.png" alt="Upload Icon">
+            <h3>Easy APK Upload</h3>
+            <p>Effortlessly upload your Android APK files to the platform.</p>
+        </div>
+        <div class="feature">
+            <img src="assets/feature-browser.png" alt="Browser Icon">
+            <h3>Browser-Based Execution</h3>
+            <p>Test and play Android apps directly within your web browser.</p>
+        </div>
+        <div class="feature">
+            <img src="assets/feature-contribute.png" alt="Community Icon">
+            <h3>Community Contributions</h3>
+            <p>Join the community and contribute to enhancing the platform.</p>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="get-started">
+        <h2>Get Started</h2>
+        <p>Start exploring Android apps with APK Playground in just a few steps:</p>
+        <ol>
+            <li>Visit the <a href="https://0x803.github.io/apk-playground">APK Playground website</a>.</li>
+            <li>Upload your Android APK file using the intuitive interface.</li>
+            <li>Follow the on-screen instructions to interact with the app.</li>
+        </ol>
+    </section>
+
+    <!-- Contribute Section -->
+    <section id="contribute" class="contribute">
+        <h2>Contribute</h2>
+        <p>We appreciate contributions from the community to help improve APK Playground:</p>
+        <ul>
+            <li>Report bugs or issues on our <a href="https://github.com/0x803/apk-playground/issues">GitHub Issues</a>.</li>
+            <li>Suggest new features or enhancements through <a href="https://github.com/0x803/apk-playground/issues">GitHub Issues</a>.</li>
+            <li>Contribute code improvements by following our <a href="CONTRIBUTING.md">Contributing Guidelines</a>.</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 APK Playground. All rights reserved.</p>
+            <p>GitHub: <a href="https://github.com/0x803">@0x803</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Theme Switcher -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('change', () => {
+            body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>
