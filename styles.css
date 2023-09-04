@@ -8,70 +8,98 @@
 /* Set body font and background color */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Light Cyan */
+    background-color: #00BFFF; /* Cyan */
     transition: background-color 0.5s;
+    overflow: hidden;
 }
 
-/* Header styles */
-.header {
-    background-color: #007acc; /* Cyan */
+/* Loading Screen */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Dark Gray */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 8px solid #fff;
+    border-top: 8px solid #00BFFF; /* Cyan */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Pop-up Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    display: none;
+}
+
+.popup-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.popup h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.popup ul {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.popup button {
+    padding: 10px 20px;
+    background-color: #00BFFF; /* Cyan */
     color: white;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-/* Rest of your CSS styles, including the drag-and-drop section and theme switcher */
-/* ... */
+.popup button:hover {
+    background-color: #007ACC; /* Slightly darker Cyan */
+}
 
-/* Re-styling the theme switcher */
+/* Theme switcher styles */
 .theme-switcher {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 999;
+    z-index: 9999;
 }
 
-/* Styling the drag-and-drop box */
-.drag-drop {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.drag-drop h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333; /* Dark Gray */
-    margin-bottom: 20px;
-}
-
-.file-drop-zone {
-    border: 2px dashed #007acc; /* Cyan */
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.file-drop-zone p {
-    margin: 10px 0;
-}
-
-.file-input-label {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007acc; /* Cyan */
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.upload-icon {
-    font-size: 18px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* ... Additional CSS for other sections ... */
-
+/* Rest of your CSS styles, including header, main content, and footer */
+/* ... */
