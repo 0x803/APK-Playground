@@ -22,7 +22,6 @@
 
 - :file_folder: **APK Upload:** Seamlessly upload your Android APK files to the platform.
 - :earth_americas: **Browser-Based Execution:** Test and play Android apps directly within your browser.
-- :mortar_board: **Educational Use:** Explore app functionality, user interfaces, and behavior.
 - :zap: **Convenient Testing:** No need to install emulators or manage physical devices.
 - :octocat: **Community Contributions:** We welcome contributions to enhance the platform's capabilities.
 
@@ -46,7 +45,7 @@ To ensure a welcoming and inclusive environment within our community, please rev
 
 ## Licensing :page_with_curl:
 
-APK Playground is open-source software licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this codebase for educational and non-commercial purposes.
+APK Playground is open-source software licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute this codebase.
 
 ## Contact :email:
 
@@ -54,8 +53,5 @@ If you have any questions, suggestions, or need assistance, feel free to reach o
 
 - GitHub: [@0x803](https://github.com/0x803)
 
-Thank you for choosing APK Playground as your platform for exploring and testing Android apps. We look forward to your contributions and feedback!
+Thank you for choosing APK Playground for exploring and testing Android apps. We look forward to your contributions and feedback!
 
----
-
-Note: APK Playground is built on the concept of running Android apps in a web browser for educational purposes.
