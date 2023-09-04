@@ -7,41 +7,76 @@ body, h1, h2, p, ul, ol, li, button {
 /* Base styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background color */
-    color: #fff; /* Light text color */
+    background-color: #121212;
+    color: #fff;
     line-height: 1.6;
 }
 
-/* Header of the site */
+/* Header styles */
 .site-header {
-    background-color: #222; /* Dark header background color */
+    background-color: #222;
+    color: #fff;
     padding: 10px 0;
-    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Logo styles */
 .site-logo img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
+    margin-right: 10px;
 }
 
 .site-logo h1 {
     font-size: 24px;
+    font-weight: bold;
+    margin: 0;
     margin-top: 10px;
 }
 
-/* Style for sections */
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.site-nav li {
+    margin-right: 20px;
+}
+
+.site-links a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.site-links a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Section styles */
 .section {
     padding: 20px;
-    background-color: #1e1e1e; /* Dark gray background color */
+    background-color: #1e1e1e;
     border-radius: 5px;
     margin-bottom: 20px;
-    color: #fff; /* Text color for sections */
+    color: #fff;
 }
 
 /* Links styles */
 a {
-    color: #007bff; /* Blue link color */
+    color: #007bff;
     text-decoration: none;
 }
 
@@ -51,7 +86,7 @@ a:hover {
 
 /* Button styles */
 button {
-    background-color: #007bff; /* Blue button color */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -62,7 +97,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 /* Popup styles */
@@ -105,7 +140,7 @@ button:hover {
 
 /* Call to Action button in the popup */
 .popup-cta button {
-    background-color: #007bff; /* Blue button color */
+    background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -116,31 +151,15 @@ button:hover {
 }
 
 .popup-cta button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 /* Footer styles */
 .site-footer {
-    background-color: #222; /* Dark footer background color */
+    background-color: #222;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Add more CSS rules for the rest of your elements as needed */
-
-/* Example: Styling for headings */
-h1 {
-    font-size: 36px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-top: 10px;
-}
-
-/* Example: Styling for paragraphs */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-}
+/* Additional CSS rules can be added for other elements as needed */
