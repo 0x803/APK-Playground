@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Function to open the popup
+    function openPopup() {
+        popupOverlay.style.display = 'flex';
+    }   
+    
     // Function to close the popup
     function closePopup() {
         popupOverlay.style.display = 'none';
