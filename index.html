@@ -5,41 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Android apps in your browser with APK Playground. Test APKs securely and efficiently.">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <title>APK Playground</title>
     <link rel="stylesheet" href="styles.css">
+    <title>APK Playground</title>
 </head>
-<body class="light-theme">
+<body class="theme-dark">
 
-    <div class="popup">
-        <div class="popup-content">
+    <div class="popup-overlay">
+        <div class="popup">
             <h2>Welcome to APK Playground</h2>
             <p>Explore Android apps in your browser. To get started:</p>
             <ul>
                 <li>Drag and drop your APK file onto the screen.</li>
                 <li>Click the "Get Started" button to begin testing.</li>
             </ul>
-            <button id="close-popup">Got It</button>
+            <button class="close-button">Got It</button>
         </div>
     </div>
 
-    <section class="drag-drop">
+    <section class="upload-section">
         <h2>Drag &amp; Drop Your APK File Here</h2>
-        <div class="file-drop-zone">
+        <div class="file-upload">
             <p>or</p>
-            <label for="file-input" class="file-input-label">
+            <label for="file-input" class="file-upload-label">
                 <span class="upload-icon">&#8613;</span> Click to Upload
             </label>
-            <input type="file" id="file-input" accept=".apk">
+            <input type="file" id="file-input" class="file-input" accept=".apk">
         </div>
     </section>
 
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
+    <header class="site-header">
+        <nav class="site-nav">
+            <div class="site-logo">
                 <img src="assets/apk-playground-logo.png" alt="APK Playground Logo">
                 <h1>APK Playground</h1>
             </div>
-            <ul class="nav-links">
+            <ul class="site-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#get-started">Get Started</a></li>
                 <li><a href="#contribute">Contribute</a></li>
@@ -48,7 +48,7 @@
     </header>
 
     <main class="main-content">
-        <section id="features" class="section">
+        <section id="features" class="feature-section">
             <h2>Features</h2>
             <ul>
                 <li>Test Android APKs directly in your web browser.</li>
@@ -59,7 +59,7 @@
             </ul>
         </section>
 
-        <section id="get-started" class="section">
+        <section id="get-started" class="get-started-section">
             <h2>Get Started</h2>
             <ol>
                 <li>Drag your APK file and drop it onto the screen.</li>
@@ -70,7 +70,7 @@
             </ol>
         </section>
 
-        <section id="contribute" class="section">
+        <section id="contribute" class="contribute-section">
             <h2>Contribute</h2>
             <p>We welcome contributions to APK Playground. You can help in the following ways:</p>
             <ul>
@@ -82,7 +82,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="site-footer">
         <div class="footer-content">
             <p>&copy; 2023 APK Playground. All rights reserved.</p>
             <p>GitHub: <a href="https://github.com/0x803">@0x803</a></p>
