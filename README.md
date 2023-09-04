@@ -29,7 +29,7 @@
 
 To begin using APK Playground, follow these straightforward steps:
 
-1. :point_right: Visit the [APK Playground website](https://0x803.github.io/apk-playground).
+1. :point_right: Visit the [APK Playground website](https://0x803.github.io/APK-Playground/).
 
 2. :inbox_tray: Upload your Android APK file using the intuitive interface.
 
