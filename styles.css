@@ -14,7 +14,7 @@ body {
 
 /* Centered overlay for the popup */
 .popup-overlay {
-    display: flex;
+    display: none; /* Hide the overlay by default */
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -25,6 +25,7 @@ body {
     background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent overlay */
     z-index: 1;
 }
+
 
 /* Popup container */
 .popup {
