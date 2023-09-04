@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="assets/apk-playground-logo.png" alt="APK Playground Logo"><br>
+  <img src="assets/apk-playground-logo.png" alt="APK Playground Logo" width="80" height="80"><br>
   APK Playground
 </h1>
 
