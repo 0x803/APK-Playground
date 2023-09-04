@@ -1,18 +1,18 @@
-// Get references to the popup elements
-const popupOverlay = document.getElementById('popup-overlay');
-const closePopupButton = document.getElementById('close-popup');
-
-// Function to open the popup
-function openPopup() {
-    popupOverlay.style.display = 'flex';
-}
-
-// Function to close the popup
-function closePopup() {
-    popupOverlay.style.display = 'none';
-}
-
 document.addEventListener('DOMContentLoaded', function () {
+    // Get references to the popup elements
+    const popupOverlay = document.getElementById('popup-overlay');
+    const closePopupButton = document.getElementById('close-popup');
+
+    // Function to open the popup
+    function openPopup() {
+        popupOverlay.style.display = 'flex';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        popupOverlay.style.display = 'none';
+    }
+
     // Add a click event listener to the "Got It" button
     closePopupButton.addEventListener('click', function () {
         closePopup();
