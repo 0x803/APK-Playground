@@ -12,82 +12,6 @@ body {
     line-height: 1.6;
 }
 
-/* Add these styles for the popup */
-.popup {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-}
-
-.popup-content {
-    background-color: #1e1e1e;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    padding: 20px;
-    max-width: 80%;
-    text-align: center;
-    color: #fff;
-}
-
-.popup-cta button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.popup-cta button:hover {
-    background-color: #0056b3;
-}
-
-
-/* Close button in the popup header */
-.close-button {
-    background: none;
-    border: none;
-    font-size: 18px;
-    color: #fff;
-    cursor: pointer;
-}
-
-/* Popup content */
-.popup-content {
-    font-size: 16px;
-}
-
-/* Ordered list in the popup */
-.popup-content ol {
-    list-style: decimal inside;
-    margin-left: 20px;
-}
-
-/* Call to Action button in the popup */
-.popup-cta button {
-    background-color: #007bff; /* Blue button color */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.popup-cta button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-}
-
 /* Header of the site */
 .site-header {
     background-color: #222; /* Dark header background color */
@@ -112,9 +36,10 @@ body {
     background-color: #1e1e1e; /* Dark gray background color */
     border-radius: 5px;
     margin-bottom: 20px;
+    color: #fff; /* Text color for sections */
 }
 
-/* Link styles */
+/* Links styles */
 a {
     color: #007bff; /* Blue link color */
     text-decoration: none;
@@ -122,6 +47,76 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Button styles */
+button {
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.popup-content {
+    background-color: #1e1e1e;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Close button in the popup header */
+.close-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Ordered list in the popup */
+.popup-content ol {
+    list-style: decimal inside;
+    margin-left: 20px;
+}
+
+/* Call to Action button in the popup */
+.popup-cta button {
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.popup-cta button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Footer styles */
@@ -133,3 +128,19 @@ a:hover {
 }
 
 /* Add more CSS rules for the rest of your elements as needed */
+
+/* Example: Styling for headings */
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Example: Styling for paragraphs */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
