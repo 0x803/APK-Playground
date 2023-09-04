@@ -8,49 +8,25 @@
     <link rel="stylesheet" href="styles.css">
     <title>APK Playground</title>
 </head>
-<body class="theme-dark">
+<body>
 
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <h2>Welcome to APK Playground</h2>
+    <div class="header">
+        <div class="container">
+            <h1>Welcome to APK Playground</h1>
             <p>Explore Android apps in your browser. To get started:</p>
-            <ol>
-                <li>Drag and drop your APK file onto the screen.</li>
-                <li>Click the "Get Started" button to begin testing.</li>
-                <li>Interact with the app as if it were installed on your device.</li>
-                <li>Explore features and functionality with ease.</li>
-                <li>Switch between themes for the best testing experience.</li>
-            </ol>
-            <div class="popup-cta">
-                <button id="close-popup">Got It</button>
-            </div>
         </div>
     </div>
 
-    <section class="apk-upload">
-        <h2>Upload Your APK</h2>
-        <form id="upload-form" enctype="multipart/form-data">
-            <input type="file" name="apkFile" id="apkFile" accept=".apk">
-            <button type="submit">Upload APK</button>
-        </form>
-    </section>
+    <div class="container">
+        <section class="section">
+            <h2>Upload Your APK</h2>
+            <form id="upload-form" enctype="multipart/form-data">
+                <input type="file" name="apkFile" id="apkFile" accept=".apk">
+                <button type="submit">Upload APK</button>
+            </form>
+        </section>
 
-    <header class="site-header">
-        <nav class="site-nav">
-            <div class="site-logo">
-                <img src="assets/apk-playground-logo.png" alt="APK Playground Logo">
-                <h1>APK Playground</h1>
-            </div>
-            <ul class="site-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#get-started">Get Started</a></li>
-                <li><a href="#contribute">Contribute</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="main-content">
-        <section id="features" class="feature-section">
+        <section class="section" id="features-section" style="display: none;">
             <h2>Features</h2>
             <ul>
                 <li>Test Android APKs directly in your web browser.</li>
@@ -61,7 +37,7 @@
             </ul>
         </section>
 
-        <section id="get-started" class="get-started-section">
+        <section class="section" id="get-started-section" style="display: none;">
             <h2>Get Started</h2>
             <ol>
                 <li>Drag your APK file and drop it onto the screen.</li>
@@ -70,9 +46,10 @@
                 <li>Explore features and functionality with ease.</li>
                 <li>Switch between themes for the best testing experience.</li>
             </ol>
+            <button id="get-started-button" style="display: none;">Get Started</button>
         </section>
 
-        <section id="contribute" class="contribute-section">
+        <section class="section">
             <h2>Contribute</h2>
             <p>We welcome contributions to APK Playground. You can help in the following ways:</p>
             <ul>
@@ -82,15 +59,93 @@
                 <li>Spread the word about APK Playground to the developer community.</li>
             </ul>
         </section>
-    </main>
+    </div>
 
-    <footer class="site-footer">
-        <div class="footer-content">
+    <div class="footer">
+        <div class="container">
             <p>&copy; 2023 APK Playground. All rights reserved.</p>
             <p>GitHub: <a href="https://github.com/0x803">@0x803</a></p>
         </div>
-    </footer>
+    </div>
 
-    <script src="script.js"></script>
+    <div id="popup-overlay" class="popup-overlay" style="display: none;">
+        <div class="popup">
+            <div class="popup-content">
+                <h2>Welcome to APK Playground</h2>
+                <p>Explore Android apps in your browser. To get started:</p>
+                <ol>
+                    <li>Drag and drop your APK file onto the screen.</li>
+                    <li>Click the "Get Started" button to begin testing.</li>
+                    <li>Interact with the app as if it were installed on your device.</li>
+                    <li>Explore features and functionality with ease.</li>
+                    <li>Switch between themes for the best testing experience.</li>
+                </ol>
+                <div class="popup-cta">
+                    <button id="close-popup">Got It</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript code for handling the popup and showing "Get Started" button
+
+        // Get references to the popup elements
+        const popupOverlay = document.getElementById('popup-overlay');
+        const closePopupButton = document.getElementById('close-popup');
+        const getStartedButton = document.getElementById('get-started-button');
+
+        // Function to open the popup
+        function openPopup() {
+            popupOverlay.style.display = 'flex';
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            popupOverlay.style.display = 'none';
+        }
+
+        // Add a click event listener to the "Got It" button
+        closePopupButton.addEventListener('click', function () {
+            closePopup();
+        });
+
+        // Initially hide the popup (optional)
+        openPopup();
+
+        // Add an event listener to the form for submission
+        document.getElementById('upload-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Reference to the file input element
+            const apkFileInput = document.getElementById('apkFile');
+
+            // Check if a file was selected
+            if (!apkFileInput.files[0]) {
+                alert('Please select an APK file to upload.');
+                return;
+            }
+
+            // Simulate APK upload (you can replace this with actual logic)
+            setTimeout(function () {
+                // Hide the upload section
+                uploadForm.style.display = 'none';
+
+                // Show the features section
+                featuresSection.style.display = 'block';
+
+                // Trigger the appearance of "Get Started" button
+                getStartedButton.style.display = 'block';
+
+                // Close the popup after successful upload (optional)
+                closePopup();
+            }, 2000); // Simulated delay (2 seconds) for uploading APK
+        });
+
+        // Event listener for "Get Started" button (you can add your functionality here)
+        getStartedButton.addEventListener('click', function () {
+            // Add your "Get Started" button functionality here
+        });
+    </script>
 </body>
 </html>
