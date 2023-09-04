@@ -12,39 +12,45 @@ body {
     line-height: 1.6;
 }
 
-/* Centered overlay for the popup */
-.popup-overlay {
-    display: none; /* Hide the overlay by default */
-    justify-content: center;
-    align-items: center;
+/* Add these styles for the popup */
+.popup {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent overlay */
-    z-index: 1;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
 
-
-/* Popup container */
-.popup {
-    background-color: #1e1e1e; /* Dark gray background color */
+.popup-content {
+    background-color: #1e1e1e;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Subtle box shadow for lift effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     padding: 20px;
     max-width: 80%;
     text-align: center;
-    color: #fff; /* Light text color */
+    color: #fff;
 }
 
-/* Header of the popup */
-.popup-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.popup-cta button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
+
+.popup-cta button:hover {
+    background-color: #0056b3;
+}
+
 
 /* Close button in the popup header */
 .close-button {
