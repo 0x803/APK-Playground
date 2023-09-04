@@ -31,7 +31,7 @@ By contributing to APK Playground, you agree to abide by our [Code of Conduct](C
 
 ## Licensing
 
-APK Playground is licensed under the [MIT License](LICENSE). By contributing, you agree that your contributions will be subject to this license.
+APK Playground is licensed under the [MIT License](LICENSE.txt). By contributing, you agree that your contributions will be subject to this license.
 
 ## Contact
 
