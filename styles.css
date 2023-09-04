@@ -101,5 +101,142 @@ body {
     z-index: 9999;
 }
 
-/* Rest of your CSS styles, including header, main content, and footer */
-/* ... */
+/* Drag and Drop Box Styles */
+.drag-drop {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.drag-drop h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; /* Dark Gray */
+    margin-bottom: 20px;
+}
+
+.file-drop-zone {
+    border: 2px dashed #007ACC; /* Cyan */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.file-drop-zone p {
+    margin: 10px 0;
+}
+
+.file-input-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007ACC; /* Cyan */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-icon {
+    font-size: 18px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Header Styles */
+.header {
+    background-color: #007ACC; /* Cyan */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00BFFF; /* Slightly lighter Cyan */
+}
+
+/* Main Content Styles */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.features, .get-started, .contribute {
+    margin-bottom: 40px;
+}
+
+.features h2, .get-started h2, .contribute h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; /* Dark Gray */
+}
+
+.features ul, .get-started ol, .contribute ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.features ul li, .get-started ol li, .contribute ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #007ACC; /* Cyan */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #00BFFF; /* Slightly lighter Cyan */
+}
